@@ -1,0 +1,210 @@
+:root {
+  --logo-text-font: "Raleway";
+  --primary-font: "Roboto", sans-serif;
+  --nohover-navlink-color: #212121;
+  --hover-cont-link: #2196f3;
+  --primary-text-color: #757575;
+  --communication-color: rgba(255, 255, 255, 0.6);
+  --button-text-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-bg-color: #ffffff;
+}
+/* Глобальные стили */
+body {
+  background-color: var(--accent-bg-color);
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.title-seclion {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.68;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button {
+  font-family: inherit;
+  cursor: pointer;
+}
+/* Скрытый заголовок h2 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Подсвечивание текущей страницы */
+.current:visited {
+  color: var(--hover-cont-link);
+}
+
+/* Стили шапки */
+.head-site {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* Лого */
+.logo {
+  font-family: var(--logo-text-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.web-logo {
+  color: #2196f3;
+}
+.head-logo {
+  color: #000000;
+}
+.footer-logo {
+  color: #ffffff;
+}
+/* Секция навигации */
+.nav-list,
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--nohover-navlink-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover-cont-link);
+}
+/* Обратная связь с разработчиками */
+.conn-link {
+  color: var(--primary-text-color);
+}
+.conn-link:hover,
+.conn-link:focus {
+  color: var(--hover-cont-link);
+}
+/* Секция подвал сайта */
+.footer {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 252px;
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
+.address-color {
+  color: #ffffff;
+}
+.footer-contacts {
+  color: var(--communication-color);
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--hover-cont-link);
+}
+/* Стили отдельных страниц */
+/* Секция страницы WebStudio */
+/* Секция hero с заказом услуг */
+.hero {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+}
+.hero-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: #ffffff;
+}
+.primary-button {
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--button-text-color);
+}
+/* Секция как мы работаем*/
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Секция Чем Мы занимаемся */
+.service-title {
+  color: var(--title-text-color);
+}
+/* Секция Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  color: var(--title-text-color);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-prof {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Секция страницы Portfolio */
+/* Основной контент страницы */
+/* Навигация по проектам */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--button-text-color);
+  background-color: #2196f3;
+}
+/* Секция Наши проекты */
+.port-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.port-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
