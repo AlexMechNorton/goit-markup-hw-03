@@ -18,12 +18,8 @@ h5,
 h6,
 p,
 ul {
-  text-decoration: none;
-}
-*,
-*::before,
-*::after {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -48,15 +44,18 @@ li {
   font-family: inherit;
   cursor: pointer;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container {
-  width: 1200px;
-  padding-left: 215px;
-  padding-right: 215px;
-}
+
 /* Скрытый заголовок h2 */
 .visually-hidden {
   position: absolute;
@@ -82,10 +81,14 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  min-height: 80px;
 }
 .head-cont {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 /* Лого */
 .logo {
@@ -106,15 +109,24 @@ li {
 /* Секция навигации */
 .navigation {
   display: flex;
+  align-items: center;
 }
-.nav-list,
+.nav-list {
+  display: flex;
+
+  margin-left: 93px;
+}
+
 .nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--nohover-navlink-color);
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: var(--hover-cont-link);
@@ -133,8 +145,8 @@ li {
 /* Секция подвал сайта */
 .footer {
   background-color: #2f303a;
-  /* width: 1600px;
-  height: 252px; */
+  /* width: 1600px; */
+  min-height: 252px;
 }
 .address {
   font-style: normal;
@@ -157,8 +169,8 @@ li {
 /* Секция hero с заказом услуг */
 .hero {
   background-color: #2f303a;
-  /* width: 1600px;
-  height: 600px; */
+  /* width: 1600px; */
+  min-height: 600px;
 }
 .hero-title {
   text-transform: uppercase;
