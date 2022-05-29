@@ -208,15 +208,16 @@ li {
   text-align: center;
 }
 .primary-button {
-  width: 200px;
-  height: 50px;
+  /* width: 200px;
+  height: 50px; */
+  padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   background-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.9;
   color: var(--button-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -294,6 +295,15 @@ li {
 /* Секция страницы Portfolio */
 /* Основной контент страницы */
 /* Навигация по проектам */
+
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 280px;
+}
+.filter-item + .filter-item {
+  margin-left: 8px;
+}
 .filter-button {
   font-weight: 500;
   font-size: 16px;
@@ -302,6 +312,7 @@ li {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: #f5f4fa;
+  padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -311,15 +322,30 @@ li {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Секция Наши проекты */
+.port-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.port-item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.port-item:nth-child(3n + 1) {
+  margin-left: 0;
+}
 .port-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-top: 20px;
+  padding-left: 24px;
 }
 .port-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-top: 4px;
+  padding-left: 24px;
 }
