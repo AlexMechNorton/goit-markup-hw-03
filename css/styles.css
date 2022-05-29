@@ -21,7 +21,10 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
 body {
   background-color: var(--accent-bg-color);
   font-family: var(--primary-font);
@@ -43,6 +46,8 @@ li {
 .button {
   font-family: inherit;
   cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
 }
 .container {
   width: 1200px;
@@ -153,15 +158,21 @@ li {
   background-color: #2f303a;
   /* width: 1600px; */
   min-height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
+  margin-top: 20px;
 }
 .address-color {
   color: #ffffff;
+}
+.footer-item + .footer-item {
+  margin-top: 9px;
 }
 .footer-contacts {
   color: var(--communication-color);
@@ -177,22 +188,52 @@ li {
   background-color: #2f303a;
   /* width: 1600px; */
   min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+.hero .container {
+  /* align-items: center; */
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 696px;
+  text-align: center;
+}
+
 .hero-title {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: #ffffff;
+  text-align: center;
 }
 .primary-button {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
   background-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: var(--button-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Секция как мы работаем*/
+.about.section {
+  padding-bottom: 0px;
+}
+.about-list {
+  display: flex;
+}
+.about-item {
+  width: 270px;
+}
+.about-item + .about-item {
+  margin-left: 30px;
+}
 .about-title {
   font-weight: 700;
   font-size: 14px;
@@ -200,18 +241,36 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .about-text {
   font-size: 14px;
   line-height: 1.71;
 }
 /* Секция Чем Мы занимаемся */
+.service .container {
+  text-align: center;
+}
 .service-title {
   color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.service-list {
+  display: flex;
+}
+.service-item + .service-item {
+  margin-left: 30px;
 }
 /* Секция Наша команда */
 .team {
   background-color: #f5f4fa;
+  text-align: center;
+}
+.team-list {
+  display: flex;
+}
+.team-item + .team-item {
+  margin-left: 30px;
 }
 .team-title {
   color: var(--title-text-color);
@@ -220,15 +279,16 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-top: 30px;
 }
 .team-prof {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 /* Секция страницы Portfolio */
@@ -247,6 +307,8 @@ li {
 .filter-button:focus {
   color: var(--button-text-color);
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Секция Наши проекты */
 .port-title {
