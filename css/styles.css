@@ -81,11 +81,11 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  min-height: 80px;
 }
 .head-cont {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  min-height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,11 +113,14 @@ li {
 }
 .nav-list {
   display: flex;
-
   margin-left: 93px;
+}
+.nav-list .item + .item {
+  margin-left: 50px;
 }
 
 .nav-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -134,6 +137,9 @@ li {
 /* Обратная связь с разработчиками */
 .connect {
   display: flex;
+}
+.connect .item + .item {
+  margin-left: 50px;
 }
 .conn-link {
   color: var(--primary-text-color);
