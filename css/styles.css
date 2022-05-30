@@ -334,9 +334,9 @@ li {
   margin-bottom: var(--card-set-gap);
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 }
-.port-item:nth-child(3n + 1) {
+/* .port-item:nth-child(3n + 1) {
   margin-left: 0;
-}
+} */
 .port-title {
   font-weight: 700;
   font-size: 18px;
