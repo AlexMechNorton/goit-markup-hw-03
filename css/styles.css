@@ -329,11 +329,6 @@ li {
   color: var(--button-text-color);
   background-color: #2196f3;
 }
-/* .btn-current:hover,
-.btn-current:focus {
-  color: var(--title-text-color);
-  background-color: #f5f4fa;
-} */
 .filter-button:hover,
 .filter-button:focus {
   color: var(--button-text-color);
